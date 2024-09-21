@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinosaur Jump Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="game-container">
+    <div id="dino"></div>
+    <div id="obstacle"></div>
+    <div class="ground"></div>
+  </div>
+
+  <div class="game-info">
+    <div>Score: <span id="score">0</span></div>
+    <div>Time: <span id="time">0</span> seconds</div>
+    <div>High Score: <span id="high-score">0</span></div>
+  </div>
+
+  <div class="play-again-container">
+    <button id="play-again">Play Again</button>
+  </div>
+  
+  <audio id="jump-sound" src="jump.mp3"></audio>
+  <audio id="gameover-sound" src="gameover.mp3"></audio>
+  <audio id="background-music" src="background.mp3" loop></audio>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

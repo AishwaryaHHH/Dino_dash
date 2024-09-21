@@ -1,0 +1,99 @@
+/* Game Container */
+.game-container {
+  position: relative;
+  width: 1000px; /* Increased the width for larger game area */
+  height: 300px;
+  border: 2px solid black;
+  overflow: hidden;
+  margin: 0 auto;
+  background: url('background.png');
+  animation: scrollBackground 10s linear infinite;
+}
+
+@keyframes scrollBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -2000px 0; } /* Adjust based on image size */
+}
+
+/* Dino */
+#dino {
+  width: 50px;
+  height: 50px;
+  background: url('dino.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Obstacle */
+#obstacle {
+  width: 30px;
+  height: 30px;
+  background: url('obstacle.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 1000px;
+}
+
+/* Power-Up */
+.power-up {
+  width: 30px;
+  height: 30px;
+  background: url('power-up.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 100px; 
+}
+
+/* Ground */
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: green;
+}
+
+/* Game Info: Score, Time, High Score */
+.game-info {
+  margin: 20px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.game-info div {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 2px solid #000;
+  min-width: 150px;
+}
+
+/* Play Again Button */
+#play-again {
+  display: none;
+  position: relative;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+#play-again:hover {
+  background-color: #218838;
+}
+
+/* Center the Play Again button */
+.play-again-container {
+  text-align: center;
+  margin-top: 20px;
+}
